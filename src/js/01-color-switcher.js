@@ -10,12 +10,11 @@ function getRandomHexColor() {
   }
 
 const timer = {
-    intervalId: null,
+  intervalId: null,
     
  start(){
    this.intervalId = setInterval(() => {document.body.style.backgroundColor = getRandomHexColor()}, 1000);
  },
-
  stop(){
     clearInterval(this.intervalId)
  },
