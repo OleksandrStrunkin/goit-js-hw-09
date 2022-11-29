@@ -47,14 +47,6 @@ class Timer {
         
     }, 1000);
   };
-
-  stop(){
-    clearInterval(this.intervalId);
-    this.isActive = false;
-    const time = convertMs(0);
-    updateClock(time);
-    console.log(`Stop active`);
-  }
 };
 
 const timer = new Timer();
