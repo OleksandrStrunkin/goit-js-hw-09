@@ -34,7 +34,6 @@ class Timer {
       const startTime = Date.now();
       const result = currentTime - startTime;
       const time = convertMs(result);
-      console.log(result)
       updateClock(time);
       console.log(`active`)
        if (result < 0) {
